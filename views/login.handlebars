@@ -1,0 +1,69 @@
+<style>
+body {
+ background-image: url("https://i.imgur.com/oan0Nfq.jpg");
+ background-size: cover;
+ background-color: rgba(255, 255, 255, 0.8);
+ background-blend-mode: lighten;
+ padding: 5px;
+}
+.navbar {
+   font-family: 'Roboto Condensed', sans-serif;
+   opacity: .8;
+   color: white;
+}
+.container {
+ padding: 16px;
+ font-family: 'Roboto Condensed', sans-serif;
+ margin: auto;
+ font-size: 20px;
+}
+ input[type=email], input[type=password] {
+ width: 100%;
+ padding: 12px 20px;
+ margin: 8px 0;
+ font-size: 18px;
+ display: inline-block;
+ border: 1px solid #ccc;
+ box-sizing: border-box;
+ }
+button {
+ background-color: black;
+ color: white;
+ padding: 14px 20px;
+ margin: 8px 0;
+ cursor: pointer;
+ width: 100%;
+}
+button:hover {
+ opacity: 0.8;
+}
+</style>
+<!-- nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+       <ul class="navbar-nav mr-auto">
+       <li class="nav-item">
+       <h2>Login</h2>
+       </li>
+       </ul>
+       <ul class="navbar-nav ml-auto">
+               <li class="nav-item active">
+               <a class="nav-link" role="button" href="/" id="backBtn">Back</a>
+               </li>
+               </ul>
+       </nav>
+ <div class="container">
+   <div class="row justify-content-md-center">
+       <form class="login">
+       <div class="form-group">
+           <label for="exampleInputEmail1"><b>Email address</b></label>
+           <input type="email" class="form-control" id="userEmail" placeholder="Email">
+         </div>
+         <div class="form-group">
+           <label for="exampleInputPassword1"><b>Password</b></label>
+           <input type="password" class="form-control" id="userPassword" placeholder="Password">
+         </div>
+         <button type="submit" class="btn btn-default" id="loginSubmit">Login</button>
+         <label for="create"><b>Or sign up <a href="/signup">here.</a></b></label>
+       </form>
+   </div>
+ </div>

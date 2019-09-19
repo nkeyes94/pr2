@@ -1,0 +1,59 @@
+
+<style>
+      body {
+        margin: 5;
+        padding: 5;
+      }
+
+      #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+      }
+
+      #favorites {
+         font-family: 'Roboto Condensed', sans-serif;
+          font-weight: bold;
+          padding: 10px;
+      }
+    </style>
+
+ <!-- nav bar -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+        <a class="btn btn-default" href="/profile">
+        <i class="fa fa-headphones fa-2x"></i>
+        </a>
+        </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+        <a class="nav-link" role="button" href="/" id="logoutButton">LOGOUT</a>
+        </li>
+        </ul>
+      </nav> 
+        
+        
+<!-- Search form -->
+<form class="example">
+    <input type="text" placeholder="Search an artist..." name="search" id="searchBar">
+    <button type="submit"><i class="fa fa-search" id="searchButton"></i></button>
+</form>
+
+<div class="row">
+<div class="col">
+<div class="sidenav" id="favorites"> 
+MY FAVORITES  
+<br>
+<br>
+</div>
+</div>
+
+<div class="col" id="artists">
+   
+</div>
+
+
+</div>
