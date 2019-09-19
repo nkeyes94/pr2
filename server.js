@@ -19,7 +19,6 @@ app.use(passport.session());
 // * Require the routes
 const routes = require("./routes/users.js")(app);
 const routeTwo = require("./routes/api-routes")(app);
-// const routeThree = require("./routes/index")(app);
 
 // * Port config
 var PORT = process.env.PORT || 8080;

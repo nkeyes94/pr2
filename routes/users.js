@@ -3,8 +3,6 @@
 var db = require("../models");
 var passport = require("../config/passport");
 var exphbs = require("express-handlebars");
-var express = require("express");
-var mysql = require("mysql");
 module.exports = function(app) {
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
