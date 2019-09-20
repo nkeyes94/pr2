@@ -2,10 +2,7 @@
 // Requiring our models and passport as we've configured it
 var db = require("../models");
 var passport = require("../config/passport");
-var exphbs = require("express-handlebars");
 module.exports = function(app) {
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
-app.set("view engine", "handlebars");
   
  app.get("/", function(req, res){
    console.log("Hit the route");

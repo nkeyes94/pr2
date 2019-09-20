@@ -5,6 +5,10 @@ var app = express();
 var mysql = require("mysql");
 var db = require("./models")
 var passport = require("./config/passport");
+var exphbs = require("express-handlebars");
+
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
 
 // * Middleware config
 app.use(express.urlencoded( { extended: false } ));
